@@ -1,7 +1,7 @@
 import { cert, getApps, initializeApp } from "firebase-admin/app";
 import { getFirestore, Timestamp } from "firebase-admin/firestore";
 
-if (!getApps().length) {
+if (!getApps().length && process.env.FIREBASE_PROJECT_ID) {
   initializeApp({
     credential: cert({
       projectId: process.env.FIREBASE_PROJECT_ID,
@@ -11,7 +11,7 @@ if (!getApps().length) {
   });
 }
 
-export const db = getFirestore();
+export const db = getApps().length ? getFirestore() : null as unknown as ReturnType<typeof getFirestore>;
 export { Timestamp };
 
 // Collection helpers
