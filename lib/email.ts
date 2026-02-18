@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 interface SurveyNotificationParams {
   guestName: string;
@@ -20,8 +20,8 @@ export async function sendSurveyNotification({
   const adminEmail = process.env.ADMIN_EMAIL;
   const baseUrl = process.env.NEXTAUTH_URL || "http://localhost:3000";
 
-  if (!adminEmail) {
-    console.warn("ADMIN_EMAIL not configured — skipping email notification");
+  if (!adminEmail || !resend) {
+    console.warn("Email not configured — skipping notification");
     return;
   }
 
