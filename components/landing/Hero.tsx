@@ -14,9 +14,16 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
+        {/* Village logo */}
+        <img
+          src="https://mariemont.org/wp-content/uploads/2024/08/white-Small-Village-of-Mariemont.png"
+          alt="Village of Mariemont seal"
+          className="w-24 h-24 mx-auto mb-6 object-contain drop-shadow-lg"
+        />
+
         {/* Seal / badge */}
-        <div className="inline-block border border-[#78ddaa]/40 rounded-full px-5 py-2 mb-8">
-          <span className="text-[#78ddaa] text-sm tracking-[0.2em] uppercase font-body font-medium">
+        <div className="inline-block border border-[#e8a84e]/40 rounded-full px-5 py-2 mb-8">
+          <span className="text-[#e8a84e] text-sm tracking-[0.2em] uppercase font-body font-medium">
             Mariemont Bureau of Visitor Affairs
           </span>
         </div>
@@ -24,7 +31,7 @@ export default function Hero() {
         <h1 className="font-heading text-white text-5xl md:text-7xl font-bold leading-tight mb-6">
           Welcome to the
           <br />
-          <span className="text-[#78ddaa]">Village of Mariemont.</span>
+          <span className="text-[#e8a84e]">Village of Mariemont.</span>
         </h1>
 
         <p className="font-heading text-white/80 text-xl md:text-2xl italic mb-4">
@@ -42,14 +49,14 @@ export default function Hero() {
           href="https://forms.gle/wjZgejMybTzDjZqz9"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-10 py-5 bg-[#78ddaa] text-[#0b2618] font-body font-bold text-lg rounded-lg hover:bg-[#5ec996] transition-colors"
+          className="inline-block px-10 py-5 bg-[#e8a84e] text-[#0b2618] font-body font-bold text-lg rounded-lg hover:bg-[#d4944a] transition-colors"
         >
           Start Your Trip →
         </a>
 
         <p className="font-body text-white/40 text-sm mt-6">
           Guests only. Not sure you're on the list?{" "}
-          <span className="text-[#78ddaa]/70">Ask your host.</span>
+          <span className="text-[#e8a84e]/70">Ask your host.</span>
         </p>
       </div>
 

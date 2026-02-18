@@ -34,7 +34,7 @@ export default function HighlightsSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="font-body text-[#78ddaa] text-sm tracking-[0.2em] uppercase font-medium mb-3">
+          <p className="font-body text-[#e8a84e] text-sm tracking-[0.2em] uppercase font-medium mb-3">
             What Awaits You
           </p>
           <h2 className="font-heading text-[#0b2618] text-4xl md:text-5xl font-bold mb-4">
@@ -61,7 +61,7 @@ export default function HighlightsSection() {
                 />
                 <div className="absolute inset-0 bg-[#0b2618]/30 group-hover:bg-[#0b2618]/10 transition-colors duration-300" />
                 <div className="absolute top-4 left-4">
-                  <span className="bg-[#78ddaa] text-[#0b2618] text-xs font-body font-bold px-3 py-1 rounded-full">
+                  <span className="bg-[#e8a84e] text-[#0b2618] text-xs font-body font-bold px-3 py-1 rounded-full">
                     {h.tag}
                   </span>
                 </div>

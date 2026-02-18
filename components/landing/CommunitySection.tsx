@@ -5,13 +5,13 @@ export default function CommunitySection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text */}
           <div>
-            <p className="font-body text-[#78ddaa] text-sm tracking-[0.2em] uppercase font-medium mb-4">
+            <p className="font-body text-[#e8a84e] text-sm tracking-[0.2em] uppercase font-medium mb-4">
               About Mariemont
             </p>
             <h2 className="font-heading text-white text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Not Just a Village.
               <br />
-              <span className="text-[#78ddaa]">A Vibe.</span>
+              <span className="text-[#e8a84e]">A Vibe.</span>
             </h2>
             <div className="font-body text-white/70 text-base leading-relaxed space-y-4">
               <p>
@@ -27,7 +27,7 @@ export default function CommunitySection() {
                 enough to know all the best spots — and which ones to avoid
                 (looking at you, construction on Wooster Pike).
               </p>
-              <p className="text-[#78ddaa] font-medium italic">
+              <p className="text-[#e8a84e] font-medium italic">
                 "The Mariemont Bureau of Visitor Affairs thanks you for choosing
                 us over literally anywhere else."
               </p>
