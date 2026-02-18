@@ -14,8 +14,6 @@ export default function Footer() {
           <p>Village of Mariemont, Ohio 45227</p>
           <p className="mt-1">
             Not affiliated with the actual Village of Mariemont government.
-            <br />
-            (Though the mayor is aware of us and thinks it&apos;s very funny.)
           </p>
         </div>
       </div>

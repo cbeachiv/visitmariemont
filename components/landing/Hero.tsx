@@ -54,10 +54,6 @@ export default function Hero() {
           Start Your Trip →
         </a>
 
-        <p className="font-body text-white/40 text-sm mt-6">
-          Guests only. Not sure you're on the list?{" "}
-          <span className="text-[#e8a84e]/70">Ask your host.</span>
-        </p>
       </div>
 
       {/* Scroll indicator */}
