@@ -1,19 +1,4 @@
-"use client";
-
-import { useRouter } from "next/navigation";
-import { useState } from "react";
-
 export default function Hero() {
-  const router = useRouter();
-  const [name, setName] = useState("");
-
-  function handleLookup(e: React.FormEvent) {
-    e.preventDefault();
-    if (name.trim()) {
-      router.push(`/visit?name=${encodeURIComponent(name.trim())}`);
-    }
-  }
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image */}
@@ -48,28 +33,19 @@ export default function Hero() {
 
         <p className="font-body text-white/70 text-base md:text-lg mb-12 max-w-xl mx-auto leading-relaxed">
           Your personalized visit has been prepared by the finest hospitality
-          operation in southwestern Ohio. Look yourself up below to get started.
+          operation in southwestern Ohio. Tell us a bit about yourself so we can
+          get started.
         </p>
 
-        {/* Name lookup form */}
-        <form
-          onSubmit={handleLookup}
-          className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+        {/* CTA */}
+        <a
+          href="https://forms.gle/wjZgejMybTzDjZqz9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-10 py-5 bg-[#78ddaa] text-[#0b2618] font-body font-bold text-lg rounded-lg hover:bg-[#5ec996] transition-colors"
         >
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder="Enter your name…"
-            className="flex-1 px-5 py-4 rounded-lg text-stone-900 bg-white/95 placeholder-stone-400 font-body text-base focus:outline-none focus:ring-2 focus:ring-[#78ddaa]"
-          />
-          <button
-            type="submit"
-            className="px-7 py-4 bg-[#78ddaa] text-[#0b2618] font-body font-bold rounded-lg hover:bg-[#5ec996] transition-colors whitespace-nowrap"
-          >
-            Look Up My Visit →
-          </button>
-        </form>
+          Start Your Trip →
+        </a>
 
         <p className="font-body text-white/40 text-sm mt-6">
           Guests only. Not sure you're on the list?{" "}
