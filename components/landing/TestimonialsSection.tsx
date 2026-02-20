@@ -26,14 +26,7 @@ export default function TestimonialsSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="font-body text-[#e8a84e] text-sm tracking-[0.2em] uppercase font-medium mb-3">
-            Visitor Dispatches
-          </p>
-          <h2 className="font-heading text-[#0b2618] text-4xl md:text-5xl font-bold mb-4">
-            They Came. They Stayed Too Long.
-          </h2>
-          <p className="font-body text-stone-600 text-lg max-w-xl mx-auto">
-            Unsolicited reviews from guests who were not paid, bribed, or
-            otherwise coerced by the Bureau.
+            What Visitors Are Saying
           </p>
         </div>
 
